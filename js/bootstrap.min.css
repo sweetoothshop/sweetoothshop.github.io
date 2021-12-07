@@ -6502,7 +6502,7 @@ a.close.disabled {
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 10;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
