@@ -428,7 +428,7 @@ footer{
 
 .about1{
     min-height: 400px;
-    background:url(img/About/about-us-parallax-1.jpg) no-repeat center 
+    background:url("img/About/about-us-parallax-1.jpg") no-repeat center 
 }
 .about1 .container {
     height: 100%;
@@ -474,7 +474,7 @@ footer{
   }
 
   .about3{
-      background: url(img/About/our-process-title-img.jpg) center/ cover;
+      background: url("img/About/our-process-title-img.jpg") center/ cover;
       background-attachment: fixed;
       padding: 100px 0;
    
@@ -490,7 +490,7 @@ footer{
     }
   }
   .about4{
-      background: url(img/about/our-process-background-img-1.jpg) center / cover;
+      background: url("img/About/our-process-background-img-1.jpg") center / cover;
       padding:100px 0;
       
   }
