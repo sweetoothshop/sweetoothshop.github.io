@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $("#t1").click(function(){
+        $("#c1").slideToggle("slow")
+        $("#c2").slideUp()
+        $("#c3").slideUp()
+    })
+    $("#t2").click(function(){
+        $("#c2").slideToggle("slow")
+        $("#c1").slideUp()
+        $("#c3").slideUp()
+    })
+    $("#t3").click(function(){
+        $("#c3").slideToggle("slow")
+        $("#c1").slideUp()
+        $("#c2").slideUp()
+    })
+})
