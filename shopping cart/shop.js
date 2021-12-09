@@ -25,7 +25,7 @@ function addItemToCart(title, price, imageSrc) {
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            alert('Sản phẩm này bạn đã chọn trong giỏ hàng')			
+            alert('This item is already in your shopping cart.')			
             return
         }
     }
@@ -81,5 +81,5 @@ function updateCartTotal() {
 }
 
 function thanhtoan() {
-	alert('Cám ơn quý khách đã shopping cửa hàng chúng tôi')
+	alert('Thank you for you purchase ^^')
 }

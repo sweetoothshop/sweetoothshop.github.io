@@ -392,7 +392,7 @@ footer{
 
 
 .section5{
-    background: url(img/h1-parallax-2.jpg) center / cover;
+    background: url("img/h1-parallax-2.jpg") center / cover;
     background-attachment: fixed;
     padding:100px 0
 }
@@ -565,7 +565,7 @@ color: rgb(32, 32, 32)!important;
   
   }
   .blog  .nav-link.active{
-      color:#af6b06;
+      /* color:#af6b06; */
       border-color:none
   }
   .blog  .nav-link{
@@ -705,7 +705,7 @@ background: currentColor;
         font-size: 14px!important;
     }
     .activepage {
-        color: #c9a74d !important;
+        color: rgb(219, 176, 58) !important;
     }
   }
 
