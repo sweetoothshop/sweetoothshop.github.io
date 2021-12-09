@@ -3,26 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <!-- InstanceBeginEditable name="doctitle" -->
-    <title>Document</title>
+    <title> Shop - Sweet Tooth </title>
+
     <!-- InstanceEndEditable -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="img/footer-image-2.png" type="image/x-icon">
+		<meta property="og:description" content="Photography Studio tại Việt Nam"/>
+	   <meta property="og:image" content="img/h1-img-14.jpg"/>
+	   <meta property="og:image:width" content="1200"/>
+	   <meta property="og:image:height" content="600"/>
     <link rel="stylesheet" href="js/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="mainstyle.css" type="text/css">
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Poppins&display=swap" rel="stylesheet">
 	   <link rel="stylesheet" href="back-to-top-button/style.css">
+   <link rel="stylesheet" href="shopping cart/shop.css">
+	   <link rel="stylesheet" href="search-full-screen/style.css">
 
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 </head>
 <body>
 
+  
+  <div id="search" class="fade">
+    <a href="#" class="close-btn" id="close-search">
+        <em class="fa fa-times"></em>
+    </a>
+    <input placeholder="Type here" id="searchbox" type="search"/>
+</div>
+  <div class="fixed-center ">
+    <button type="button" class="btn " data-toggle="modal" data-target="#shopping-box">
+            
+      <i class="fa fa-shopping-cart" style="font-size: 17px;"></i>
+      <span class="text-danger mr-lg-1 mr-md-4 mr-3 " id="sl"></span>
+    </button>
+    </div>
   <a id="button"></a>
 
-
-<nav class="navbar navbar-expand-lg navbar-light p-4">
+  <div class="modal " id="shopping-box">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title">Cart</h5> -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+  <div class="modal-body pp" >
+    <h1 class="text-center mb-5"> CART</h1>
+    <div class="cart-row d-flex">
+  <span class="cart-item cart-header cart-column">ITEM</span>
+  <span class="cart-price cart-header cart-column">PRICE</span> 
+  <span class="cart-quantity cart-header cart-column">QUANTITY</span> 
+</div>
+    <div class="cart-items"> </div>
+    <div class="cart-total"> <strong class="cart-total-title">Total</strong><span> €</span> <span class="cart-total-price text-danger">0</span> </div>
+    <button class="btn btn-purchase" type="button" onClick="thanhtoan()">Purchase</button>
+    
+  </div>
+  <!-- <div class="modal-footer">
+    <button type="button" class="btn" data-dismiss="modal">Close</button>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true" class="mr-3">&times;</span>
+    </button> -->
+  </div>
+</div>
+</div>
+</div>
+  <nav class="navbar navbar-expand-lg navbar-light p-4 bg-nav">
     <div class="container ">
       <a class="navbar-brand" href="index.html"><img style="height: 60px;" src="img/logo.png"></a>
       <button class="navbar-toggler ml-auto mr-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,39 +82,50 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link link link--metis " aria-current="page" href="index.html"> <span>Home </span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link link link--metis" href="about.html">About</a>
           </li>
               <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link link link--metis activepage dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
               Shop
             </a>
-            <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item " href="shop.html" >All</a></li>
-              <li><a class="dropdown-item " href="cake.html">Cake</a></li>
-              <li><a class="dropdown-item" href="chocolate.html">Chocolate<a> </li>
-              <li><a class="dropdown-item" href="organic.html">Organic</a>
-              </li>
+            <ul class="dropdown-menu bg-nav" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item " href="shop.html" > <span class="link link--metis"> All products</a></span></li>
+              <li><a class="dropdown-item " href="cake.html"> <span class="link link--metis">Cake</span></a></li>
+              <li><a class="dropdown-item " href="chocolate.html"><span class="link link--metis">Chocolate<a></span> </li>
+              <li><a class="dropdown-item  " href="organic.html"><span class="link link--metis">Organic</span></a>
+              </li >
             </ul>
           </li>
         
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+      
+
+          <li class="nav-item ">
+             <a  href="blog.html" class="link link--metis nav-link ">
+              Blog
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+          <li class="nav-item ">
+             <a  href="contact.html" class="link link--metis nav-link">
+              Contact
+            </a>
           </li>
+
+          
         </ul>
+        <div class="navbar-text p-20">
+         
+          <a href="#search"><i class="fa fa-search" style="color:rgb(70, 69, 69)"></i></a>
+        </div>
 
       </div>
-      <div class="navbar-text p-20">
-        <i class="fa fa-shopping-cart mr-2"></i>
-        <i class="fa fa-search"></i>
-      </div>
+
     </div>
   </nav>
+	
+
 
   <div class="headerimg text-center mx-auto"> 
   <p class="tieude-trang">
@@ -80,12 +142,15 @@
   <main class="col-lg-9 col-md-12 pr-lg-5">
     <div class="row text-center">
       <div class="col-lg-4 col-md-6">
-        <img src="img/shop/shop-4-img-300x300.jpg" class="img-fluid">
-          <h6 style="font-size: 20px;" class="mt-3">Boston cream</h6>
+        <div class="nopad ac">
+          <img src="img/shop/shop-4-img-300x300.jpg" class="img-fluid shop-item-image">
+          <h3 style="font-size: 24px;"  class="s6t text-light shop-item-button"> Add to cart</h3>
+         </div>
+          <h6 style="font-size: 20px;" class="mt-3 shop-item-title">Boston cream</h6>
            <div>
-             <span> €3.00</span>
+            <span>€</span><span class="shop-item-price">23.00</span>
           <span class="gcu">
-            €7.00</span>
+            €27.00</span>
           </div>
           <div class="d-flex my-3 justify-content-center mb-5 pb-3">
           <i class="fa fa-star text-warning mr-2"></i>
@@ -96,10 +161,13 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-        <img src="img/shop/shop-5-img-300x300.jpg" class="img-fluid">
-          <h6 style="font-size: 20px;" class="mt-3">Basbousa creme</h6>
+          <div class="nopad ac">
+            <img src="img/shop/shop-5-img-300x300.jpg" class="img-fluid shop-item-image">
+            <h3 style="font-size: 24px;"  class="s6t text-light shop-item-button"> Add to cart</h3>
+           </div>
+          <h6 style="font-size: 20px;" class="mt-3 shop-item-title">Basbousa creme</h6>
            <div>
-             <span> €4.00</span>
+            <span>€</span><span class="shop-item-price">14.00</span>
           <span class="gcu">
             €7.00</span>
           </div>
@@ -113,54 +181,62 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-  
-          <img src="img/shop/shop-7-img-300x300.jpg" class="img-fluid">
-            <h6 style="font-size: 20px;" class="mt-3">Dark chocolate</h6>
-             <div>
-               <span> €12.00</span>
-          
-            </div>
-            <div class="d-flex my-3 justify-content-center mb-5 pb-3">
-            <i class="fa fa-star text-warning mr-2"></i>
-                <i class="fa fa-star text-warning mr-2"></i>
-                <i class="fa fa-star text-warning mr-2"></i>
-                <i class="fa fa-star text-warning mr-2"></i>
-                <i class="fa fa-star text-warning mr-2"></i>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-          <img src="img/shop/shop-8-img-300x300.jpg" class="img-fluid">
-            <h6 style="font-size: 20px;" class="mt-3">Pear dessert</h6>
-             <div>
-               <span> €8.00</span>
-               <span class="gcu">
-                €10.00</span>
-            </div>
-            <div class="d-flex my-3 justify-content-center mb-5 pb-3">
-            <i class="fa fa-star text-warning mr-2"></i>
-                <i class="fa fa-star text-warning mr-2"></i>
-                <i class="fa fa-star text-warning mr-2"></i>
-                <i class="fa fa-star text-warning mr-2"></i>
-                <i class="fa fa-star text-warning mr-2"></i>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-  
-            <img src="img/shop/shop-2-img-300x300.jpg" class="img-fluid">
-              <h6 style="font-size: 20px;" class="mt-3">Creme candy</h6>
-               <div>
-                 <span> €12.00</span>
-              
-              </div>
-              <div class="d-flex my-3 justify-content-center mb-5 pb-3">
-              <i class="fa fa-star text-warning mr-2"></i>
-                  <i class="fa fa-star text-warning mr-2"></i>
-                  <i class="fa fa-star text-warning mr-2"></i>
-                  <i class="fa fa-star text-warning mr-2"></i>
-                  <i class="fa fa-star bg-transparent text-secondary mr-2"></i>
+          <div class="nopad ac">
+            <img src="img/shop/shop-7-img-300x300.jpg" class="img-fluid shop-item-image">
+            <h3 style="font-size: 24px;"  class="s6t text-light shop-item-button"> Add to cart</h3>
+           </div>
+          <h6 style="font-size: 20px;" class="mt-3 shop-item-title">Dark chocolate</h6>
+           <div>
+            <span>€</span><span class="shop-item-price">18.00</span>
         
-              </div>
-            </div>
+          </div>
+          <div class="d-flex my-3 justify-content-center mb-5 pb-3">
+          <i class="fa fa-star text-warning mr-2"></i>
+              <i class="fa fa-star text-warning mr-2"></i>
+              <i class="fa fa-star text-warning mr-2"></i>
+              <i class="fa fa-star text-warning mr-2"></i>
+              <i class="fa fa-star text-warning mr-2"></i>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="nopad ac">
+            <img src="img/shop/shop-8-img-300x300.jpg" class="img-fluid shop-item-image">
+            <h3 style="font-size: 24px;"  class="s6t text-light shop-item-button"> Add to cart</h3>
+           </div>
+          <h6 style="font-size: 20px;" class="mt-3 shop-item-title">Pear dessert</h6>
+           <div>
+            <span>€</span><span class="shop-item-price">8.00</span>
+             <span class="gcu">
+              €10.00</span>
+          </div>
+          <div class="d-flex my-3 justify-content-center mb-5 pb-3">
+          <i class="fa fa-star text-warning mr-2"></i>
+              <i class="fa fa-star text-warning mr-2"></i>
+              <i class="fa fa-star text-warning mr-2"></i>
+              <i class="fa fa-star text-warning mr-2"></i>
+              <i class="fa fa-star text-warning mr-2"></i>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+  
+          <div class="nopad ac">
+            <img src="img/shop/shop-3-img-300x300.jpg" class="img-fluid shop-item-image">
+            <h3 style="font-size: 24px;"  class="s6t text-light shop-item-button"> Add to cart</h3>
+           </div>
+          <h6 style="font-size: 20px;" class="mt-3 shop-item-title">Creme candy</h6>
+           <div>
+            <span>€</span><span class="shop-item-price">12.00</span>
+          
+          </div>
+          <div class="d-flex my-3 justify-content-center mb-5 pb-3">
+          <i class="fa fa-star text-warning mr-2"></i>
+              <i class="fa fa-star text-warning mr-2"></i>
+              <i class="fa fa-star text-warning mr-2"></i>
+              <i class="fa fa-star text-warning mr-2"></i>
+              <i class="fa fa-star bg-transparent text-secondary mr-2"></i>
+    
+          </div>
+        </div>
     </div>
   </main>
   <!-- InstanceEndEditable -->
@@ -186,25 +262,101 @@
   <section id="a-4" class="my-5">
     <h5 class="mb-4">Shop by Price</h5>
     <div class="d-flex flex-column mt-3">
-      <a href="#" class="nav-link">€2 -€4</a>
-      <a href="#" class="nav-link">€4 -€7</a>
-      <a href="#" class="nav-link">€7 -€10</a>
-      <a href="#" class="nav-link">€10 -€15</a>
+      <a style="cursor: not-allowed;" class="nav-link">€4 - €10</a>
+      <a style="cursor: not-allowed;" class="nav-link">€11 - €15</a>
+      <a style="cursor: not-allowed;" class="nav-link">€15 - €20</a>
+      <a style="cursor: not-allowed;" class="nav-link">€22 - €30</a>
 
     </div>
     </section>
   <section id="a-6" class="my-5">
     <h5 class="mb-4">TOP RATED PRODUCTS</h5>
-    <div class="d-flex">
-      <img src="img/shop/shop-2-img-300x300.jpg" class="img-fluid" style="height:120px">
-      <div  class="ml-4 ">
+    <div class="d-flex my-5 " >
+      <div class="nopad ac "style="height:120px; width: 120px;">
+      <img src="img/shop/shop-2-img-300x300.jpg" class="shop-item-image img-fluid"  >
+        <i class="fa fa-shopping-cart s6t text-light shop-item-button text-center " style="font-size: 28px;"></i>
+    </div>
+      <div  class="ml-4">
         
-        <h6 style="font-size: 20px;" class="mt-3">Petits fours</h6>
-         <div>
-           <span> €7.00</span>
+        <h6 style="font-size: 20px;" class=" shop-item-title">Petits fours</h6>
+        <div>
+          <span>€</span><span class="shop-item-price">7.00</span>
        
         </div>
-        <div class="d-flex my-3 justify-content-center mb-5 pb-3">
+        <div class="d-flex my-3 justify-content-center  pb-3">
+        <i class="fa fa-star text-warning mr-2"></i>
+            <i class="fa fa-star text-warning mr-2"></i>
+            <i class="fa fa-star text-warning mr-2"></i>
+            <i class="fa fa-star text-warning mr-2"></i>
+            <i class="fa fa-star text-warning mr-2"></i>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="d-flex my-5 " >
+      <div class="nopad ac "style="height:120px; width: 120px;">
+      <img src="img/shop/shop-1-img-300x300.jpg" class="shop-item-image img-fluid"  >
+        <i class="fa fa-shopping-cart s6t text-light shop-item-button text-center " style="font-size: 28px;"></i>
+    </div>
+      <div  class="ml-4">
+        
+        <h6 style="font-size: 20px;" class=" shop-item-title">Fruit creme</h6>
+        <div>
+          <span>€</span><span class="shop-item-price">4.00</span>
+          <span class="gcu">
+            €7.00</span>
+       
+        </div>
+        <div class="d-flex my-3 justify-content-center  pb-3">
+        <i class="fa fa-star text-warning mr-2"></i>
+            <i class="fa fa-star text-warning mr-2"></i>
+            <i class="fa fa-star text-warning mr-2"></i>
+            <i class="fa fa-star text-warning mr-2"></i>
+            <i class="fa fa-star text-warning mr-2"></i>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="d-flex my-5 " >
+      <div class="nopad ac "style="height:120px; width: 120px;">
+      <img src="img/shop/shop-6-img-300x300.jpg" class="shop-item-image img-fluid"  >
+        <i class="fa fa-shopping-cart s6t text-light shop-item-button text-center " style="font-size: 28px;"></i>
+    </div>
+      <div  class="ml-4">
+        
+        <h6 style="font-size: 20px;" class=" shop-item-title">Cocoa 100%</h6>
+        <div>
+          <span>€</span><span class="shop-item-price">4.00</span>
+          <span class="gcu">
+            €14.00</span>
+       
+        </div>
+        <div class="d-flex my-3 justify-content-center  pb-3">
+        <i class="fa fa-star text-warning mr-2"></i>
+            <i class="fa fa-star text-warning mr-2"></i>
+            <i class="fa fa-star text-warning mr-2"></i>
+            <i class="fa fa-star text-warning mr-2"></i>
+            <i class="fa fa-star text-warning mr-2"></i>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="d-flex my-5 " >
+      <div class="nopad ac "style="height:120px; width: 120px;">
+      <img src="img/shop/shop-1-img-300x300.jpg" class="shop-item-image img-fluid"  >
+        <i class="fa fa-shopping-cart s6t text-light shop-item-button text-center " style="font-size: 28px;"></i>
+    </div>
+      <div  class="ml-4">
+        
+        <h6 style="font-size: 20px;" class=" shop-item-title">Pear dessert</h6>
+        <div>
+          <span>€</span><span class="shop-item-price">14.00</span>
+     
+        </div>
+        <div class="d-flex my-3 justify-content-center  pb-3">
         <i class="fa fa-star text-warning mr-2"></i>
             <i class="fa fa-star text-warning mr-2"></i>
             <i class="fa fa-star text-warning mr-2"></i>
@@ -216,70 +368,7 @@
 
     </div>
    
-    <div class="d-flex">
-      <img src="img/shop/shop-1-img-300x300.jpg" class="img-fluid" style="height:120px">
-      <div  class="ml-4 ">
-        
-        <h6 style="font-size: 20px;" class="mt-3">Fruit creme</h6>
-        <div>
-          <span> €4.00</span>
-       <span class="gcu">
-         €7.00</span>
-       </div>
-       <div class="d-flex my-3 justify-content-center mb-5 pb-3">
-       <i class="fa fa-star text-warning mr-2"></i>
-           <i class="fa fa-star text-warning mr-2"></i>
-           <i class="fa fa-star text-warning mr-2"></i>
-           <i class="fa fa-star text-warning mr-2"></i>
-           <i class="fa fa-star text-warning mr-2"></i>
-       </div>
-      </div>
-
-
-    </div>
-   
-    <div class="d-flex">
-      <img src="img/shop/shop-6-img-300x300.jpg" class="img-fluid" style="height:120px">
-      <div  class="ml-4 ">
-        
-        <h6 style="font-size: 20px;" class="mt-3">Cocoa 100%</h6>
-       <div>
-         <span> €4.00</span>
- 
-      </div>
-      <div class="d-flex my-3 justify-content-center mb-5 pb-3">
-      <i class="fa fa-star text-warning mr-2"></i>
-          <i class="fa fa-star text-warning mr-2"></i>
-          <i class="fa fa-star text-warning mr-2"></i>
-          <i class="fa fa-star text-warning mr-2"></i>
-          <i class="fa fa-star text-warning mr-2"></i>
-      </div>
-      </div>
-
-
-    </div>
-    <div class="d-flex">
-      <img src="img/shop/shop-8-img-300x300.jpg" class="img-fluid" style="height:120px">
-      <div  class="ml-4 ">
-        
-        <h6 style="font-size: 20px;" class="mt-3">Pear dessert</h6>
-       <div>
-         <span> €8.00</span>
-         <span class="gcu">
-          €10.00</span>
-      </div>
-      <div class="d-flex my-3 justify-content-center mb-5 pb-3">
-      <i class="fa fa-star text-warning mr-2"></i>
-          <i class="fa fa-star text-warning mr-2"></i>
-          <i class="fa fa-star text-warning mr-2"></i>
-          <i class="fa fa-star text-warning mr-2"></i>
-          <i class="fa fa-star text-warning mr-2"></i>
-      </div>
-      </div>
-
-
-    </div>
-   
+  
    
 
     </section>
@@ -358,5 +447,8 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script  src="back-to-top-button/script.js"></script>
+<script  src="shopping cart/shop.js"></script>	
+	
+	
 </body>
 <!-- InstanceEnd --></html>

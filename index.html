@@ -2,20 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title> Sweet Tooth </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="img/footer-image-2.png" type="image/x-icon">
+		<meta property="og:description" content="Photography Studio tại Việt Nam"/>
+	   <meta property="og:image" content="img/h1-img-14.jpg"/>
+	   <meta property="og:image:width" content="1200"/>
+	   <meta property="og:image:height" content="600"/>
     <link rel="stylesheet" href="js/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="mainstyle.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="back-to-top-button/style.css">
     <link rel="stylesheet" href="horizontal-timeline/style.css">
-    
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="search-full-screen/style.css">
+    <link rel="stylesheet" href="shopping cart/shop.css">
+
 </head>
 <body>
   <a id="button"></a>
-
+  <div id="search" class="fade">
+    <a href="#" class="close-btn" id="close-search">
+        <em class="fa fa-times"></em>
+    </a>
+    <input placeholder="Type here" id="searchbox" type="search"/>
+</div>
 <header>
   <nav class="navbar navbar-expand-lg navbar-light p-4 bg-nav">
     <div class="container ">
@@ -59,6 +71,10 @@
 
           
         </ul>
+        <div class="navbar-text p-20">
+   
+          <a href="#search"><i class="fa fa-search" style="color:rgb(70, 69, 69)"></i></a>
+        </div>
         <!-- <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
@@ -95,10 +111,11 @@
         </ul> -->
 
       </div>
-      <div class="navbar-text p-20">
-        <i class="fa fa-shopping-cart mr-2"></i>
-        <i class="fa fa-search"></i>
-      </div>
+      <!-- <div class="navbar-text p-20">
+        <i class="fa fa-shopping-cart mr-2" style="color: #191818"></i>
+        <a href="#search"><i class="fa fa-search"></i></a>
+      </div> -->
+  
     </div>
   </nav>
 
@@ -119,7 +136,7 @@
         <hr class="hrmain mx-auto">
         <p class="p-16 ">Sweet Tooth is a delightful theme designed for all types of modern cake shops & ventures. Make your website today! 
         <br>
-        <button type="button" class="btn px-5 py-3 my-4 mt-6">TAKE A BITE</button>
+        <a href="shop.html"><button type="button" class="btn px-5 py-3 my-4 mt-6">TAKE A BITE </button></a>
       </div>  
     </div>
     <div class="carousel-item">
@@ -128,7 +145,7 @@
         <h1 class=" chu"> A Sweet Bite</h1>
             <hr class="hrmain mx-auto">
             <p class="p-16">Take it all in a single bite. Import the full demo content with a single mouse click using the one-click import feature. <br>
-              <button type="button" class="btn px-5 py-3 my-4 ">TAKE A BITE</button>
+              <a href="shop.html"><button type="button" class="btn px-5 py-3 my-4 mt-6">TAKE A BITE </button></a>
           </div> 
     </div>
     <div class="carousel-item">
@@ -137,7 +154,7 @@
         <h1 class=" chu"> A Delicacy</h1>
         <hr class="hrmain mx-auto">
         <p class="p-16"> Sweet Tooth is packed with carefully designed inner pages & beautiful, completely customizable homepage layouts. <br>
-          <button type="button" class="btn px-5 py-3 my-4">TAKE A BITE</button>
+          <a href="shop.html"><button type="button" class="btn px-5 py-3 my-4 mt-6">TAKE A BITE </button></a>
       </div> 
     </div>
     
@@ -282,7 +299,8 @@
         <h1>Choose Your Flavor</h1>
         <hr class="hrmain mr-auto">
         <p>Lorem Ipsum proin gravida nibh vel velit auctor aliquetenean sollicitudin, lorem qui bibendum auctor, nisi elit consequat gravida nibh vel velit auctor lorem qui bibendum auctor aliquetenean proin gravida nibh Ipsum proin gravida nibh vel velit nisi elit consequa. Nisi elit consequat gravida nibh vel.</p>
-        <button type="button" class="btn mainbutton my-4 text-white">ORDER</button>
+        <a href="shop.html"><button type="button" class="btn mainbutton my-4 text-white">ORDER</button></a>
+
       </div>
 
     </div>
@@ -294,19 +312,22 @@
         <h1>Special Of The Day</h1>
         <hr class="hrmain  ml-md-auto ml-lg-1">
         <p>Lorem Ipsum proin gravida nibh vel velit auctor aliquetenean sollicitudin, lorem qui bibendum auctor, nisi elit consequat gravida nibh vel velit auctor lorem qui bibendum auctor aliquetenean proin gravida nibh Ipsum proin gravida nibh vel velit nisi elit consequa. Nisi elit consequat gravida nibh vel.</p>
-        <button type="button" class="btn mainbutton my-4 text-white">ORDER</button>
+        <a href="shop.html"><button type="button" class="btn mainbutton my-4 text-white">ORDER</button></a>
       </div>
       <div class="col-lg-6 col-12 tlx">
         <img src="img/h1-img-7.png" class="img-fluid ">
       </div>
     </div>
+    
   </div>
+
   <div class="section5 text-light">
     <div class="tit text-center">
       <h1 class="text-light pt-5">Menu</h1>
       <hr class="hrmain mx-auto">
       <p class=" mb-5">Lorem Ipsum proin gravida nibh vel velit auctor aliquetenean sollicitudin, lorem qui bibendum auctor, nisi elit consequat gravida nibh vel velit auctor lorem qui.</p>
       </div>
+      
 
 
 
@@ -408,6 +429,8 @@
       
   
           </div>
+         
+
           
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -514,7 +537,11 @@
           
         </div>
       </div> 
-    </div>  
+    </div> 
+    <div class="odn my-5">
+    <a href="shop.html" ><button type="button" class="btn mainbutton my-4 text-white " >Buy Now</button></a>
+  </div> 
+    
   </div>
 
   <div class="section6">
@@ -803,6 +830,8 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script  src="back-to-top-button/script.js"></script>
 
-</script><script  src="horizontal-timeline/script.js"></script>
+<script  src="horizontal-timeline/script.js"></script>
+<script  src="shopping cart/shop.js"></script>
+
 </body>
 </html>

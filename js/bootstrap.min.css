@@ -5932,7 +5932,7 @@ a.close.disabled {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 0.5rem;
+  margin-right: 1rem;
   pointer-events: none;
 }
 
@@ -6054,8 +6054,9 @@ a.close.disabled {
   align-items: flex-start;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  padding-top: 20px;
+  padding-right:20px;
+  /* border-bottom: 1px solid #dee2e6; */
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -6075,6 +6076,7 @@ a.close.disabled {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1rem;
+  
 }
 
 .modal-footer {
@@ -8010,6 +8012,7 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030;
 }
+
 
 .fixed-bottom {
   position: fixed;

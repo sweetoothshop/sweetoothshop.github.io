@@ -33,8 +33,11 @@ h1,h2,h3,h5,h6{
     font-style: normal;
     font-display: swap;
 }
-.headerimg{	background: url("img/About/about-us-title-img.jpg") no-repeat center top; 
-	min-height: 400px; 
+.gcu{ color: #7F7F7F; text-decoration: line-through; margin-left: 15px}
+
+
+.headerimg{	background: url("img/pricing-title-img.jpg") no-repeat center ; 
+	min-height: 500px; 
 }
 .headerblog{	background: url("img/our-team-title-img.jpg") no-repeat center top; 
 	min-height: 550px; 
@@ -60,17 +63,38 @@ aside .nav-link{ color: #666; border-bottom: 1px solid #ddd; padding:15px 0}
 /* background: url("images/nav-link-dot.png") no-repeat 2% center; padding: 20px; padding-left: 30px;} */
 aside .nav-link:hover{
      /* background: url("images/.png") no-repeat 2.9% center; */
-	color: #cc7c20; 
+	color: 
+    #e0a606; 
     transform: translateX(5px);
 }
 aside #a-3 a{ font-size: 24px; color: #333}
 aside #a-3 a:hover{ text-decoration: none;color: #FC5CBA;}
 footer{ background: #4B4342; padding-top:40px}
 
+.odn{
+    position: relative;
+}
+.odn a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.odn button{
+    background-color: transparent;
+    border: 1px solid white!important;
+    padding: 15px 35px !important;
+}
+.odn button:hover{
+    background-color: black;
+    border: none!important;
+}
 
 
-
-
+nav{
+    background-color: white;
+}
 
 .nav-item{
     /* border-right: 1px solid rgb(180, 177, 177); */
@@ -382,7 +406,7 @@ footer{
     margin: auto;
 }
 
- .nopad {
+ .nopad,.ac {
     padding: 0px!important;
     position: relative;
     overflow: hidden;
@@ -417,6 +441,23 @@ footer{
     background-color: rgba(34, 33, 33, 0.4);
     transition: all 0.8S ease;
    opacity: 0;
+}
+.ac:after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content:"";
+    background-color: #c9a84dd5!important;
+    transition: all 0.8S ease;
+    opacity: 0;
+}
+
+.shop-item-button:hover{
+
+color: rgb(32, 32, 32)!important;
+
 }
 .nopad:hover:after{
     opacity: 1;
@@ -584,6 +625,7 @@ footer{
     .carousel-caption{
       transform: translate(0%,-50%)!important;
     }
+   
    
   }
 @media screen and (max-width:700px) {
