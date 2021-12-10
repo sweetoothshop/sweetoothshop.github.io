@@ -16,7 +16,7 @@
   height: 100vh !important;
   opacity: 1;
   width: 100vw !important;
-  z-index: 22;
+  z-index: 1122;
 }
 #search:target .close-btn {
   display: block;
