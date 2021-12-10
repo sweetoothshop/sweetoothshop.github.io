@@ -81,5 +81,5 @@ function updateCartTotal() {
 }
 
 function thanhtoan() {
-	alert('Thank you for you purchase ^^')
+	alert('Thank you for your purchase ^^')
 }
