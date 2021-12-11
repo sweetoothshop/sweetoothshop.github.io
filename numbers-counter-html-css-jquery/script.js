@@ -3,7 +3,7 @@ $(".counter-timer").each(function() {
   $(this).countTo({
     from: 0,
     to: number,
-    speed: 4000,
+    speed: 3000,
     refreshInterval: 10,
     formatter: function(number, options) {
       number = number.toFixed(options.decimals);
